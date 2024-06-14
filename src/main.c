@@ -222,7 +222,7 @@ static bool initialize_packets_directory(const char* dir)
   return true;
 }
 
-
+// https://github.com/dogeel/recdvb/blob/master/mkpath.c
 static int do_mkdir(const char *path, mode_t mode)
 {
     struct stat st;
@@ -241,6 +241,7 @@ static int do_mkdir(const char *path, mode_t mode)
     return(status);
 }
 
+// https://github.com/dogeel/recdvb/blob/master/mkpath.c
 static int mkpath(const char *path, mode_t mode)
 {
     char *pp;
